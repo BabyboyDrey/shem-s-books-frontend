@@ -1,0 +1,419 @@
+.main-bg-profile-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  padding: 0 20px;
+  min-height: 700px;
+}
+
+.sidebar-content-container-bg {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: fit-content;
+}
+
+.sidebar-content-container {
+  background: white;
+  flex-grow: 3;
+  border-radius: 30px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 25px 28px;
+  width: fit-content;
+}
+
+.sidebar-headers-container {
+  background: white;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 25px 28px;
+  flex-grow: 0;
+  gap: 5px;
+  width: fit-content;
+}
+
+.user-profile-container {
+  margin: 0 20px;
+  padding: 15px;
+  border-radius: 100px;
+  background-color: #f5dbe0;
+  cursor: pointer;
+  height: fit-content;
+  width: fit-content;
+}
+
+.user-profile-icon {
+  height: 26px;
+  width: 26px;
+  color: #b90e30;
+}
+
+.img-avatar {
+  height: 55px;
+  width: 55px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.user-profile-container:hover {
+  background-color: #b90e30;
+}
+
+.user-profile-container:hover .user-profile-icon {
+  color: #f5dbe0;
+}
+
+.user-in-profile-bg-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.user-profile-hr {
+  color: red;
+}
+
+.user-in-profile-bg-container h3 {
+  font-size: 26px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+}
+
+.user-profile-edit-profile-container,
+.user-profile-orders-container,
+.user-profile-refunds-container,
+.user-profile-wishlist-container,
+.user-profile-payments-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+}
+
+.user-profile-edit-profile-container:hover,
+.user-profile-orders-container:hover,
+.user-profile-refunds-container:hover,
+.user-profile-wishlist-container:hover,
+.user-profile-payments-container:hover {
+  background-color: #f5dbe0;
+}
+
+.user-profile-edit-profile-container h3,
+.user-profile-orders-container h3,
+.user-profile-refunds-container h3,
+.user-profile-wishlist-container h3,
+.user-profile-payments-container h3 {
+  font-size: 26px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+}
+
+.user-profile-edit-profile-container h5,
+.user-profile-orders-container h5,
+.user-profile-refunds-container h5,
+.user-profile-wishlist-container h5,
+.user-profile-payments-container h5 {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+  position: absolute;
+  background: #f5dbe0;
+  border-radius: 10px;
+  color: #b90e30;
+  width: fit-content;
+  left: 50px;
+  padding: 2px 5px;
+  opacity: 0;
+  animation: appear 0.42s ease-in-out;
+  animation-fill-mode: forwards;
+  display: none;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+div.clicked h3 {
+  color: #f5dbe0;
+}
+
+div.clicked {
+  background: #b90e30;
+}
+
+div.clicked .profile-icon {
+  color: #f5dbe0;
+}
+
+div.clicked:hover {
+  background: #b90e30;
+}
+
+.user-profile-orders-icon,
+.user-profile-settings-icon,
+.user-profile-refunds-icon,
+.user-profile-wishlist-icon,
+.user-profile-payments-icon {
+  color: #b90e30;
+  width: 58px;
+  height: 58px;
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar-headers-container {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .user-profile-edit-profile-container h3,
+  .user-profile-orders-container h3,
+  .user-profile-refunds-container h3,
+  .user-profile-wishlist-container h3,
+  .user-profile-payments-container h3,
+  .user-in-profile-bg-container h3 {
+    display: none;
+  }
+  .user-profile-edit-profile-container,
+  .user-profile-orders-container,
+  .user-profile-refunds-container,
+  .user-profile-wishlist-container,
+  .user-profile-payments-container {
+    width: fit-content;
+  }
+
+  .user-profile-orders-icon,
+  .user-profile-settings-icon,
+  .user-profile-refunds-icon,
+  .user-profile-wishlist-icon,
+  .user-profile-payments-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .user-profile-icon {
+    height: 26px;
+    width: 26px;
+    color: #b90e30;
+  }
+
+  .sidebar-headers-container {
+    padding: 20px 10px;
+  }
+
+  /* .sidebar-content-container.order-cell {
+    width: 500px;
+  } */
+
+  .user-profile-edit-profile-container:hover h5,
+  .user-profile-orders-container:hover h5,
+  .user-profile-refunds-container:hover h5,
+  .user-profile-wishlist-container:hover h5,
+  .user-profile-payments-container:hover h5 {
+    display: block;
+  }
+}
+
+/* UserProfileSettings css */
+
+.user-profile-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: first baseline;
+  gap: 10px;
+}
+
+.flex-align-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.flex-align-row h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  line-height: auto;
+}
+
+.flex-align-row input {
+  background: #fff;
+  width: 450px;
+  height: 82px;
+  border-radius: 42px;
+  padding: 36px;
+  border: 1.77px solid #686868;
+  font-size: 26px;
+  font-family: "Inter", sans-serif;
+  outline-color: crimson;
+}
+
+.user-profile-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.user-profile-input-container select,
+.user-profile-input-container option {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+  color: black;
+  outline: none;
+  width: 300px;
+  border: none;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.user-profile-form-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.user-profile-form-button-container {
+  width: 100%;
+}
+
+.user-profile-form-button-container button {
+  font-family: "Inter", sans-serif;
+  font-size: 25.04px;
+  font-weight: 700;
+  margin: 10px;
+  border: none;
+  background-color: #f8e7ea;
+  color: #b90e30;
+
+  line-height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 12px 5px 12px;
+  width: 250px;
+  height: 53px;
+}
+
+.user-profile-form-delete-logout-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 3.75px;
+}
+
+.user-profile-form-delete-logout-button-container button:nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-size: 17.04px;
+  font-weight: 300;
+  margin: 10px;
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  line-height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 12px;
+  width: fit-content;
+  height: 33px;
+}
+
+.user-profile-form-delete-logout-button-container button:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-size: 17.04px;
+  font-weight: 300;
+  margin: 10px;
+  border: none;
+  background-color: black;
+  color: whitesmoke;
+
+  line-height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 12px;
+  width: fit-content;
+  height: 33px;
+}
+
+.user-profile-form-delete-logout-button-container button:nth-child(1):hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.user-profile-form-delete-logout-button-container button:nth-child(2):hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.user-profile-form-button-container button:hover {
+  background-color: #b90e30;
+  color: #f8e7ea;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-align-row h3 {
+    font-size: 16px;
+  }
+
+  .flex-align-row input {
+    width: 250px;
+    height: 42px;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .user-profile-input-container select,
+  .user-profile-input-container option {
+    font-size: 14px;
+    width: 100px;
+  }
+}
+
+/* User Profile Order Setting Css */
+
+.data-grid-container {
+}
+
+/* User Profile WishList Setting Css */
+
+.user-profile-product-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}

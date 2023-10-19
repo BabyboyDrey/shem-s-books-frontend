@@ -1,0 +1,185 @@
+.footer-container {
+  margin-top: 50px;
+  background: #8b0b24;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.9;
+  mix-blend-mode: luminosity;
+  width: 100vw;
+  height: 100%;
+  padding: 10px 20px;
+}
+
+.footer-bg-container {
+  background-image: url("../../public/Frame\ 63.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+.footer-body-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: first baseline;
+  gap: 10px;
+  width: 100%;
+}
+
+.brand-name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.brand-name-container > span {
+  font-size: 71.71px;
+  color: #f8e7ea;
+  text-align: center;
+  line-height: auto;
+}
+
+.brand-name-container > span:nth-child(1) {
+  font-family: "Gochi Hand", sans-serif;
+}
+.brand-name-container > span:nth-child(2) {
+  font-family: "Knewave", sans-serif;
+}
+
+.copyright-container {
+  width: 100%;
+}
+
+.copyright-container > h6 {
+  text-align: center;
+  font-size: 32.27px;
+  line-height: auto;
+  color: #f8e7ea;
+  font-family: "Inter", sans-serif;
+}
+
+.sitemap-container {
+  padding: 4px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.sitemap-container > h6 {
+  color: #8b0b24;
+  font-size: 34.42px;
+  background: #f5dbe0;
+  padding: 4px;
+  border-radius: 10px;
+  line-height: auto;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.sitemap-container > h6:nth-child(1) {
+  text-decoration: underline;
+}
+
+.sitemap-container > h6:nth-child(2),
+.sitemap-container > h6:nth-child(3),
+.sitemap-container > h6:nth-child(4),
+.socials-container > h6:nth-child(2),
+.socials-container > h6:nth-child(3),
+.socials-container > h6:nth-child(4),
+.services-container > h6:nth-child(2),
+.services-container > h6:nth-child(3),
+.services-container > h6:nth-child(4) {
+  cursor: pointer;
+}
+
+.socials-container {
+  padding: 4px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.socials-container > h6 {
+  color: #f5dbe0;
+  font-size: 34.42px;
+  line-height: auto;
+  padding: 4px;
+  border-radius: 10px;
+  background: #b90e30;
+  width: 100%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.socials-container > h6:nth-child(1),
+.services-container > h6:nth-child(1) {
+  text-decoration: underline;
+}
+
+.services-container {
+  padding: 4px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.services-container > h6 {
+  color: #f5dbe0;
+  font-size: 34.42px;
+  line-height: auto;
+  padding: 4px;
+  border-radius: 10px;
+  background: #850b24;
+  width: 100%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.icon {
+  margin: 5px 8px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .services-container > h6,
+  .socials-container > h6,
+  .sitemap-container > h6 {
+    font-size: 27.42px;
+  }
+
+  .copyright-container > h6 {
+    font-size: 25.27px;
+  }
+
+  .brand-name-container > span {
+    font-size: 64.71px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .services-container > h6,
+  .socials-container > h6,
+  .sitemap-container > h6 {
+    width: 65%;
+  }
+}

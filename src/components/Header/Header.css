@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 100vw;
+  position: relative;
+  gap: 20px;
+  position: relative;
+}
+
+.brand-name {
+  cursor: pointer;
+  margin: 5px;
+  width: fit-content;
+}
+
+.shem {
+  font-family: "Gochi Hand", sans-serif;
+  font-size: 38px;
+  line-height: auto;
+  margin: 5px;
+}
+
+.books {
+  font-family: "Knewave", sans-serif;
+  font-size: 38px;
+  line-height: auto;
+  margin: 5px;
+}
+
+.search-results-container {
+  position: absolute;
+  /* width: 680px; */
+  width: 90vw;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  top: 80px;
+  left: 25px;
+  background: #f8e7ea;
+  z-index: 2000;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  transition: all ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.search-result-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  width: 100%;
+  gap: 5px;
+  height: fit-content;
+  margin: 3px 0 7px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-result-item-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+}
+
+.search-result-item-container h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: auto;
+  font-weight: 500;
+}
+
+.search-result-item-product-name {
+  width: 100%;
+}
+
+.search-result-item-product-price {
+  width: 50%;
+}
+
+.search-container {
+  position: relative;
+  margin: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  width: 100px;
+  height: 44px;
+  background-color: #f8e7ea;
+  border: none;
+  outline: none;
+  border-radius: 0 20px 20px 0;
+  padding: 20px 10px 20px 10px;
+  caret-color: #b90e30;
+
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+}
+
+.search-input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+  line-height: auto;
+  color: #b90e30;
+}
+
+.search-vector {
+  color: #b90e30;
+  width: 25px;
+  height: 25px;
+  /* position: absolute;
+  top: 30%;
+  left: 35%; */
+}
+
+.search-vector-container {
+  background-color: #f8e7ea;
+
+  width: 60px;
+  border-right: 0.5px solid #b90e30;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 0 0 20px;
+}
+
+.sign-up-button {
+  font-family: "Inter", sans-serif;
+  font-size: 21.04px;
+  font-weight: 500;
+
+  border: none;
+  background-color: transparent;
+  color: #005e86;
+  line-height: auto;
+  cursor: pointer;
+}
+
+.become-seller-button {
+  font-family: "Inter", sans-serif;
+  font-size: 21.04px;
+  font-weight: 500;
+
+  border: none;
+  background-color: #b90e30;
+  color: #f8e7ea;
+  line-height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 12px;
+  width: fit-content;
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 20px;
+  gap: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .become-seller-button {
+    display: none;
+  }
+  .shem {
+    font-size: 28px;
+  }
+  .books {
+    font-size: 28px;
+  }
+
+  /* .header-container {
+    width: 725px;
+  } */
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .become-seller-button {
+    display: none;
+  }
+
+  .shem {
+    font-size: 28px;
+  }
+  .books {
+    font-size: 28px;
+  }
+  /* .header-container {
+    width: 725px;
+  } */
+
+  .search-input {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .search-input {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .search-input {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .search-input {
+    width: 300px;
+  }
+}

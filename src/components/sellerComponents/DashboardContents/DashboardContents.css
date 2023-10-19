@@ -1,0 +1,387 @@
+.dc-bg-container {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 20px; */
+  height: 100%;
+  /* padding-right: 30px; */
+}
+
+/* create product and shop settings css */
+
+.dc-user-profile-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: first baseline;
+  gap: 10px;
+}
+
+.dc-flex-align-row,
+.im-dc-flex-align-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.dc-flex-align-row h3,
+.im-dc-flex-align-row h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  line-height: auto;
+}
+
+.dc-flex-align-row input {
+  background: #fff;
+  width: 450px;
+  height: 82px;
+  border-radius: 42px;
+  padding: 36px;
+  border: 1.77px solid #686868;
+  font-size: 26px;
+  font-family: "Inter", sans-serif;
+  outline-color: crimson;
+}
+
+.dc-flex-align-row textarea {
+  background: #fff;
+  border-radius: 42px;
+  padding: 16px;
+  border: 1.77px solid #686868;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  outline-color: crimson;
+}
+
+input[type="file"] {
+  background: white;
+  border-radius: 42px;
+  width: 450px;
+  padding: 36px;
+  border: 1.77px solid #686868;
+  font-size: 26px;
+  font-family: "Inter", sans-serif;
+}
+
+.dc-user-profile-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.dc-user-profile-input-container select,
+.dc-user-profile-input-container option {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+  color: black;
+  outline: none;
+  width: 300px;
+  border: none;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dc-user-profile-form-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dc-user-profile-form-button-container {
+  width: 100%;
+}
+
+.dc-user-profile-form-button-container button {
+  font-family: "Inter", sans-serif;
+  font-size: 25.04px;
+  font-weight: 700;
+  margin: 10px;
+  border: none;
+  background-color: #f8e7ea;
+  color: #b90e30;
+
+  line-height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 12px 5px 12px;
+  width: 250px;
+  height: 53px;
+}
+
+.dc-user-profile-form-delete-logout-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 3.75px;
+}
+
+.dc-user-profile-form-delete-logout-button-container button:nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-size: 17.04px;
+  font-weight: 300;
+  margin: 10px;
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  line-height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 12px;
+  width: fit-content;
+  height: 33px;
+}
+
+.dc-user-profile-form-delete-logout-button-container button:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-size: 17.04px;
+  font-weight: 300;
+  margin: 10px;
+  border: none;
+  background-color: black;
+  color: whitesmoke;
+
+  line-height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 12px;
+  width: fit-content;
+  height: 33px;
+}
+
+.dc-user-profile-form-delete-logout-button-container button:nth-child(1):hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.dc-user-profile-form-delete-logout-button-container button:nth-child(2):hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.dc-user-profile-form-button-container button:hover {
+  background-color: #b90e30;
+  color: #f8e7ea;
+}
+
+@media screen and (max-width: 1024px) {
+  .dc-flex-align-row h3,
+  .im-dc-flex-align-row h3 {
+    font-size: 16px;
+  }
+
+  .dc-flex-align-row input {
+    width: 250px;
+    height: 42px;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  input[type="file"] {
+    width: 250px;
+    height: 52px;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .dc-user-profile-input-container select,
+  .dc-user-profile-input-container option {
+    font-size: 14px;
+    width: 100px;
+  }
+}
+
+/* Refund Request css  */
+
+.data-grid-bg-of-container {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+}
+
+.data-grid-container {
+  width: 70vw;
+  background: white;
+}
+
+/* Withdrawals css  */
+
+.withdrawals-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 50vw;
+}
+
+.amount-made-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  color: #686868;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: auto;
+}
+
+.withdrawals-bg-container button {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: auto;
+  color: #f8e7ea;
+  background: #b90e30;
+  padding: 5px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* All products css */
+
+.all-products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.single-product-container {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  border: 1px solid whitesmoke;
+  border-radius: 18px;
+  padding: 8px;
+}
+
+.product-image-container img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 26px;
+}
+
+.product-book-container h3,
+.product-stock-edit-container h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: auto;
+}
+
+.product-stock-edit-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.product-edit-icon {
+  width: 20px;
+  height: 20px;
+  color: green;
+  cursor: pointer;
+}
+
+.product-delete-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.product-delete-icon {
+  width: 20px;
+  height: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+.edit-popup-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  box-shadow: 5px 5px 6px 5px #686868;
+  z-index: 10;
+  width: max-content;
+  height: fit-content;
+  padding: 5px;
+}
+
+.product-edit-x-icon {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.product-edit-x-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.edit-popup-container button,
+.product-stock-container h3,
+.product-stock-container input {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: auto;
+}
+
+.edit-popup-container button {
+  margin-top: 10px;
+}
+
+.product-stock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.product-stock-container input {
+  width: 150px;
+  height: 40px;
+}

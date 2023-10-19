@@ -1,0 +1,101 @@
+.dashboard-header-items-container {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  min-height: 100%;
+  height: fit-content;
+  padding-right: 10px;
+}
+
+.dashboard-settings-container,
+.dashboard-create-product-container,
+.dashboard-create-event-container,
+.dashboard-refund-request-container,
+.dashboard-withdrawals-container,
+.dashboard-notifications-container,
+.dashboard-product-sales-container,
+.dashboard-all-products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ds-icon,
+.cp-icon,
+.ce-icon,
+.rr-icon,
+.w-icon,
+.n-icon,
+.ap-icon,
+.p-s-icon {
+  color: #b90e30;
+  width: 26px;
+  height: 26px;
+}
+
+.dashboard-settings-container h3,
+.dashboard-create-product-container h3,
+.dashboard-create-event-container h3,
+.dashboard-refund-request-container h3,
+.dashboard-withdrawals-container h3,
+.dashboard-notifications-container h3,
+.dashboard-product-sales-container h3,
+.dashboard-all-products-container h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: auto;
+  color: #b90e30;
+}
+
+.dashboard-settings-container:hover,
+.dashboard-create-product-container:hover,
+.dashboard-create-event-container:hover,
+.dashboard-refund-request-container:hover,
+.dashboard-withdrawals-container:hover,
+.dashboard-notifications-container:hover,
+.dashboard-product-sales-container:hover,
+.dashboard-all-products-container:hover {
+  background: #f8e7ea;
+}
+
+.clicked-cell {
+  background: #b90e30;
+}
+
+div.clicked-cell h3 {
+  color: #f8e7ea;
+}
+
+div.clicked-cell:hover {
+  background: #b90e30;
+}
+
+.dashboard-settings-container.clicked-cell .ds-icon,
+.dashboard-create-product-container.clicked-cell .cp-icon,
+.dashboard-create-event-container.clicked-cell .ce-icon,
+.dashboard-refund-request-container.clicked-cell .rr-icon,
+.dashboard-withdrawals-container.clicked-cell .w-icon,
+.dashboard-notifications-container.clicked-cell .n-icon,
+.dashboard-product-sales-container.clicked-cell .p-s-icon,
+.dashboard-all-products-container.clicked-cell .ap-icon {
+  color: #f8e7ea;
+}
+
+@media screen and (max-width: 1024px) {
+  .Dheader h3 {
+    display: none;
+  }
+}

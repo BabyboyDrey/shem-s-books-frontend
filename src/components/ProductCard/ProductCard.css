@@ -1,0 +1,131 @@
+/* .product-card-container {
+  max-width: 384px;
+  height: 640px;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border: 2.5px solid whitesmoke;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* max-width: 100%; }*/
+
+.product-card-container {
+  width: 384px;
+  height: 640px;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border: 2.5px solid whitesmoke;
+}
+
+.product-card-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.product-card-header-container :nth-child(1) {
+  font-size: 28.1px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+}
+
+.product-card-header-container :nth-child(2) {
+  font-size: 18.73px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+  color: #656565;
+}
+
+.product-card-image-container {
+  width: 100%;
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.product-card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-card-image-container:hover img {
+  transform: scale(2);
+  transition: transform 0.45s ease-in-out;
+}
+
+.product-card-desc p {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+}
+
+.AiFillStar,
+.AiOutlineStar {
+  color: #ffd700;
+  width: 22.1px;
+  height: 42.48px;
+}
+
+.heart-cart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.red-color {
+  color: red;
+}
+
+.heart-icon,
+.product-card-cart-icon {
+  width: 29px;
+  height: 29px;
+  cursor: pointer;
+}
+
+.product-card-ratings-no-of-sold {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product-card-ratings-no-of-sold h4 {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+  color: #656565;
+}
+
+.product-card-prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product-card-prices :nth-child(1) {
+  font-size: 33.72px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+}
+.product-card-prices :nth-child(2) {
+  font-size: 22.48px;
+  font-family: "Inter", sans-serif;
+  line-height: auto;
+  color: #530616;
+  opacity: 0.87;
+  text-decoration: line-through;
+}

@@ -1,0 +1,27 @@
+.dashboard-container {
+  background-color: whitesmoke;
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 50px;
+}
+
+.dashboard-headers-container {
+  flex: 3;
+
+  min-height: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dashboard-content-container {
+  flex: 9;
+}

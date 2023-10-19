@@ -1,0 +1,41 @@
+.most-affordable-container {
+  margin: 20px 10px;
+}
+
+.most-affordable-container h1 {
+  font-family: "Inter", sans-serif;
+  font-family: 40px;
+  margin: 5px 10px;
+}
+
+.productcard-container-most-affordable {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 0 10px;
+  min-width: fit-content;
+  width: 100%;
+  background: rgb(254, 240, 240);
+}
+
+@media screen and (max-width: 768px) {
+  .productcard-container-most-affordable {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .most-affordable-container {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .most-affordable-container {
+    padding: 0 100px;
+  }
+}

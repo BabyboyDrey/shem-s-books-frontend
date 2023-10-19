@@ -1,0 +1,90 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height:fit-content;
+  gap: 20px;
+  padding: 20px;
+  background-image: url("../../public/sign-up-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.login-container h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 57.93px;
+  line-height: auto;
+}
+
+.form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-tag-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.login-tag-container h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 18.91px;
+  line-height: auto;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  width: 80%;
+  height: 80%;
+}
+
+.login-form input {
+  background: #fff;
+  width: 450px;
+  height: 82px;
+  border-radius: 42px;
+  padding: 36px;
+  border: 1.77px solid #686868;
+  font-size: 26px;
+  font-family: "Inter", sans-serif;
+  outline-color: #00597e;
+}
+
+.login-form input::placeholder {
+  color: #686868;
+  font-size: 26px;
+  font-family: "Inter", sans-serif;
+}
+
+.login-form button {
+  width: 250px;
+  height: 52px;
+  border-radius: 30px;
+  font-size: 26px;
+  font-family: "Inter", sans-serif;
+  color: #00597e;
+  background-color: #e6f1f6;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  color: #e6f1f6;
+  background-color: #00597e;
+}

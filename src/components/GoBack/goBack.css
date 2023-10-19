@@ -1,0 +1,24 @@
+.go-back-button {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.go-back-button h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: auto;
+  background: grey;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  color: #cccccc;
+  cursor: pointer;
+}

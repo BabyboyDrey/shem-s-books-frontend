@@ -1,0 +1,44 @@
+.cat-container {
+  width: 285px;
+  height: 244px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.image-container {
+  width: 281px;
+  height: 188px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-container:hover img {
+  transform: scale(2);
+  transition: transform 0.45s ease-in-out;
+}
+
+.cat-header {
+  font-family: "Inter", sans-serif;
+  font-size: 24.38px;
+  font-weight: 500;
+  line-height: auto;
+}
+
+/* @media screen and (min-width: 769px) {
+  body {
+    background: purple;
+  }
+
+  .image-container {
+    width: 241px;
+    height: 168px;
+  }
+} */

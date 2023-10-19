@@ -1,0 +1,40 @@
+.best-selling-container {
+  margin: 20px 10px;
+}
+
+.best-selling-container h1 {
+  font-family: "Inter", sans-serif;
+  font-family: 40px;
+  margin: 5px 10px;
+}
+
+.productcard-container-best-selling {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 0 10px;
+  width: fit-content;
+  background: rgb(254, 240, 240);
+}
+
+@media screen and (max-width: 768px) {
+  .productcard-container-best-selling {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .best-selling-container {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .best-selling-container {
+    padding: 0 100px;
+  }
+}
