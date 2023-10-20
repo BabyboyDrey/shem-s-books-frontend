@@ -1,7 +1,7 @@
 .bg-container {
   padding: 0 100px 0 100px;
-  min-width: 100vw;
-  width: 100%;
+  min-width: 100%;
+  width: max-content;
   top: 0;
   z-index: 1;
   position: sticky;
