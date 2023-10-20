@@ -1,6 +1,7 @@
 .bg-container {
   padding: 0 100px 0 100px;
-  width: 100vw;
+  min-width: 100vw;
+  width: 100%;
   top: 0;
   z-index: 1;
   position: sticky;
@@ -223,7 +224,6 @@ h2,
 
   .bg-container {
     padding: 0;
-    width: 724x;
     display: flex;
     flex-direction: column;
     justify-content: center;
