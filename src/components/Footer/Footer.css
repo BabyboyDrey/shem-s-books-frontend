@@ -9,8 +9,8 @@
   gap: 10px;
   opacity: 0.9;
   mix-blend-mode: luminosity;
-  min-width: 100%;
-  width: max-content;
+  min-width: max-content;
+  width: 100vw;
   height: 100%;
   padding: 10px 20px;
 }
@@ -20,8 +20,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 100%;
-  width: max-content;
+  min-width: max-content;
+  width: 100vw;
 }
 
 .footer-body-container {
