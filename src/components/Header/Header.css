@@ -10,7 +10,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  min-width: max-content;
+  /* min-width: max-content; */
   width: 100vw;
   position: relative;
   gap: 20px;
