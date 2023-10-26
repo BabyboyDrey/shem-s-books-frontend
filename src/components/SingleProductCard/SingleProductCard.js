@@ -155,6 +155,7 @@ const SingleProductCard = () => {
               <img
                 src={`${server}/${data?.bookImages[imgIndex]}`}
                 alt='image'
+                loading='lazy'
               />
             </div>
           ) : (

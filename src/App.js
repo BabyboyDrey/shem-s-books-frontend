@@ -34,95 +34,93 @@ function App () {
     Store.dispatch(loadSeller())
   }, [])
 
-
-
   return (
-    
-      <BrowserRouter>
-        <span ref={scrollTopRef} />
-        <ToastContainer
-          position='top-center'
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme='light'
-        />
-        <Routes>
-          <Route
-            path='/'
-            element={<HomePage active={active} setActive={setActive} />}
-          ></Route>
-          <Route
-            path='/categories'
-            element={<CategoriesPage active={active} setActive={setActive} />}
-          ></Route>
-          <Route
-            path='/best-selling'
-            element={<BestSellingPage active={active} setActive={setActive} />}
-          ></Route>
-          <Route
-            path='/all-events'
-            element={<AllEventsPage active={active} setActive={setActive} />}
-          ></Route>
-          <Route
-            path='/most-affordable'
-            element={
-              <MostAffordablePage active={active} setActive={setActive} />
-            }
-          ></Route>
-          <Route path='/book/:id' element={<SingleProductPage />}></Route>
-          <Route path='/sign-up' element={<SignUpPage />}></Route>
-          <Route path='/login' element={<LoginPage />}></Route>
-          <Route path='/seller/sign-up' element={<SellerSignUpPage />}></Route>
-          <Route path='/seller/login' element={<SellerLoginPage />}></Route>
-          <Route
-            path='/profile'
-            element={
-              <UserProtectedRoute>
-                <UserProfilePage />
-              </UserProtectedRoute>
-            }
-          ></Route>
-          <Route path='/event/:id' element={<SingleEventPage />}></Route>
-          <Route
-            path='/checkout'
-            element={
-              <UserProtectedRoute>
-                <CheckOutPage />
-              </UserProtectedRoute>
-            }
-          ></Route>
-          <Route
-            path='/success'
-            element={
-              <UserProtectedRoute>
-                <OrderSuccessPage />
-              </UserProtectedRoute>
-            }
-          ></Route>
-          <Route
-            path='/activation/:activation_token'
-            element={<ActivationPage />}
-          ></Route>
-          <Route
-            path='/seller/activation/:activation_token'
-            element={<SellerActivationPage />}
-          ></Route>
-          <Route
-            path='/seller/dashboard'
-            element={
-              <SellerProtectedRoute>
-                <SellerDashboardPage />
-              </SellerProtectedRoute>
-            }
-          ></Route>
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <span ref={scrollTopRef} />
+      <ToastContainer
+        position='top-center'
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme='light'
+      />
+      <Routes>
+        <Route
+          path='/'
+          element={<HomePage active={active} setActive={setActive} />}
+        ></Route>
+        <Route
+          path='/categories'
+          element={<CategoriesPage active={active} setActive={setActive} />}
+        ></Route>
+        <Route
+          path='/best-selling'
+          element={<BestSellingPage active={active} setActive={setActive} />}
+        ></Route>
+        <Route
+          path='/all-events'
+          element={<AllEventsPage active={active} setActive={setActive} />}
+        ></Route>
+        <Route
+          path='/most-affordable'
+          element={<MostAffordablePage active={active} setActive={setActive} />}
+        ></Route>
+        <Route
+          path='/book/:id'
+          element={<SingleProductPage active={active} setActive={setActive} />}
+        ></Route>
+        <Route path='/sign-up' element={<SignUpPage />}></Route>
+        <Route path='/login' element={<LoginPage />}></Route>
+        <Route path='/seller/sign-up' element={<SellerSignUpPage />}></Route>
+        <Route path='/seller/login' element={<SellerLoginPage />}></Route>
+        <Route
+          path='/profile'
+          element={
+            <UserProtectedRoute>
+              <UserProfilePage />
+            </UserProtectedRoute>
+          }
+        ></Route>
+        <Route path='/event/:id' element={<SingleEventPage />}></Route>
+        <Route
+          path='/checkout'
+          element={
+            <UserProtectedRoute>
+              <CheckOutPage />
+            </UserProtectedRoute>
+          }
+        ></Route>
+        <Route
+          path='/success'
+          element={
+            <UserProtectedRoute>
+              <OrderSuccessPage />
+            </UserProtectedRoute>
+          }
+        ></Route>
+        <Route
+          path='/activation/:activation_token'
+          element={<ActivationPage />}
+        ></Route>
+        <Route
+          path='/seller/activation/:activation_token'
+          element={<SellerActivationPage />}
+        ></Route>
+        <Route
+          path='/seller/dashboard'
+          element={
+            <SellerProtectedRoute>
+              <SellerDashboardPage />
+            </SellerProtectedRoute>
+          }
+        ></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

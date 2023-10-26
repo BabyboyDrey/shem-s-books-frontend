@@ -355,6 +355,7 @@ const UserProfileSettings = () => {
                   setAvatar(e.target.files[0])
                 }}
                 type='file'
+                className='avatar-input'
               />
             </div>
           </div>

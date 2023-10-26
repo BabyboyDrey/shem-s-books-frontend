@@ -1,13 +1,17 @@
 .bg-container {
   padding: 0 100px 0 100px;
-  min-width: 100%;
-  width: max-content;
+
+  width: 100vw;
   top: 0;
   z-index: 1;
   position: sticky;
   background: white;
-  box-shadow: 0 3px 3.78px 1.73px rgb(165, 164, 164);
-  position: relative;
+  box-shadow: 0 3px 3.78px 1.73px rgba(185, 14, 48, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar-container {
@@ -65,6 +69,13 @@ h2:hover,
   padding: 10px;
   border-radius: 100px;
   text-align: center;
+}
+
+.img-avatar1 {
+  height: 55px;
+  width: 55px;
+  border-radius: 100px;
+  object-fit: cover;
 }
 
 .user-container {
@@ -151,11 +162,11 @@ h2,
   padding: 20px;
   z-index: 999;
   position: absolute;
-  width: 550px;
+  width: 80vw;
   display: flex;
   top: 2vw;
-  left: 11vw;
-  box-shadow: 0px 20px 60px 54px rgba(94, 79, 83, 0.5);
+  left: 6vw;
+  box-shadow: 0px 20px 60px 54px rgba(185, 14, 48, 0.5);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -196,6 +207,38 @@ h2,
   z-index: 999;
 }
 
+h2 {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0 20px;
+  color: #a70d2b;
+  line-height: auto;
+  cursor: pointer;
+  opacity: 0;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.become-seller-button1 {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 18.04px;
+  font-weight: 700;
+  margin: 10px;
+  border: none;
+  background-color: #b90e30;
+  color: #f8e7ea;
+  line-height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 12px 5px 12px;
+  width: 170px;
+  height: 33px;
+}
+
 @keyframes scaleIn {
   from {
     transform: scale(0);
@@ -224,25 +267,10 @@ h2,
 
   .bg-container {
     padding: 0;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-
-  h2 {
-    display: block;
-    font-family: "Inter", sans-serif;
-    font-size: 37px;
-    font-weight: bold;
-    margin: 0 20px;
-    color: #a70d2b;
-    line-height: auto;
-    cursor: pointer;
-    opacity: 0;
-    text-align: center;
-    animation: fadeIn 0.6s ease-in-out;
-    animation-fill-mode: forwards;
+    align-items: center; */
   }
 
   .navbar-links-popup-bg {
@@ -289,23 +317,6 @@ h2,
     animation-delay: 0.6s;
   }
 
-  .become-seller-button1 {
-    display: block;
-    font-family: "Inter", sans-serif;
-    font-size: 25.04px;
-    font-weight: 700;
-    margin: 10px;
-    border: none;
-    background-color: #b90e30;
-    color: #f8e7ea;
-    line-height: auto;
-    cursor: pointer;
-    border-radius: 20px;
-    padding: 5px 12px 5px 12px;
-    width: 250px;
-    height: 53px;
-  }
-
   .hamburger-container {
     display: inline;
   }
@@ -329,6 +340,22 @@ h2,
       opacity: 0;
       transform: translateY(-20px);
     }
+  }
+
+  .user-icon,
+  .cart-icon,
+  .hamburger {
+    width: 18px;
+    height: 18px;
+  }
+  .cart-container > span {
+    font-size: 18px;
+    left: 25px;
+  }
+
+  .img-avatar1 {
+    height: 38px;
+    width: 38px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -336,19 +363,13 @@ h2,
     display: none;
   }
 
-  h2 {
-    display: block;
-    font-family: "Inter", sans-serif;
-    font-size: 37px;
-    font-weight: bold;
-    margin: 0 20px;
-    color: #a70d2b;
-    line-height: auto;
-    cursor: pointer;
-    opacity: 0;
-    text-align: center;
-    animation: fadeIn 0.6s ease-in-out;
-    animation-fill-mode: forwards;
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    gap: 50px;
   }
 
   .navbar-links-popup-bg {
@@ -395,23 +416,6 @@ h2,
     animation-delay: 0.6s;
   }
 
-  .become-seller-button1 {
-    display: block;
-    font-family: "Inter", sans-serif;
-    font-size: 25.04px;
-    font-weight: 700;
-    margin: 10px;
-    border: none;
-    background-color: #b90e30;
-    color: #f8e7ea;
-    line-height: auto;
-    cursor: pointer;
-    border-radius: 20px;
-    padding: 5px 12px 5px 12px;
-    width: 250px;
-    height: 53px;
-  }
-
   .hamburger-container {
     display: inline;
   }
@@ -435,6 +439,12 @@ h2,
       opacity: 0;
       transform: translateY(-20px);
     }
+  }
+
+  .bg-container {
+    padding: 0 50px;
+    width: 100vw;
+    min-width: 100px;
   }
 }
 
@@ -536,7 +546,7 @@ h2,
   z-index: 999;
   top: -75px;
   right: 0;
-  box-shadow: -10px 10px 50px 5px grey;
+  box-shadow: -10px 10px 50px 5px rgba(185, 14, 48, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -779,6 +789,79 @@ h2,
   background: #940b26;
 }
 
+@media screen and (min-width: 320px) and (max-width: 481px) {
+  .cart-item-container {
+    min-width: 40px;
+    width: 250px;
+    height: 150px;
+    gap: 9px;
+
+    padding: 10px 20px;
+  }
+
+  .cart-img-container {
+    width: 120px;
+    height: 80px;
+  }
+
+  .cart-product-title-container h3 {
+    font-size: 11px;
+  }
+
+  .cart-seller-name-plus-stock-container {
+    font-size: 8px;
+  }
+
+  .price-X-count-container span {
+    font-size: 9px;
+  }
+
+  .cart-total-price-container h3 {
+    font-size: 11px;
+  }
+
+  .cart-delete-button-container {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .cart-delete-button-container h3 {
+    font-size: 9px;
+    padding: 3px 5px;
+  }
+
+  .cart-delete-button-container h3:hover {
+    font-size: 11px;
+  }
+
+  .checkout-button {
+    font-size: 12.5px;
+
+    padding: 5px 20px;
+  }
+
+  .count-container span:nth-child(2),
+  .count-container span:nth-child(1),
+  .count-container span:nth-child(3) {
+    font-size: 10px;
+  }
+
+  .count-container span:nth-child(1),
+  .count-container span:nth-child(3) {
+    padding: 2.5px 6px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .cart-checkout-container {
+    width: 85vw;
+    height: 100vh;
+  }
+
+  .x-container {
+    font-size: 30px;
+  }
+}
 @media screen and (min-width: 769px) {
   .icyTwo {
     min-width: 1500px;

@@ -39,16 +39,6 @@ const SellerSignUp = () => {
           toast.success(
             `Activation link sent to ${shopEmail}, click on it to complete sign up`
           )
-          console.log({
-            shopName,
-            shopEmail,
-            shopNumber,
-            shopPassword,
-            shopCountry,
-            shopState,
-            shopZipCode,
-            shopStreetAddress
-          })
         })
         .catch(err => {
           toast.error(err.response)

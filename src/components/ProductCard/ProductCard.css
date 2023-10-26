@@ -1,16 +1,3 @@
-/* .product-card-container {
-  max-width: 384px;
-  height: 640px;
-  background: white;
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 10px;
-  border: 2.5px solid whitesmoke;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  /* max-width: 100%; }*/
-
 .product-card-container {
   width: 384px;
   height: 640px;
@@ -128,4 +115,12 @@
   color: #530616;
   opacity: 0.87;
   text-decoration: line-through;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .product-card-container {
+    width: 284px;
+    height: 640px;
+    padding: 6px;
+  }
 }

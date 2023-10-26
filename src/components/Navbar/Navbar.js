@@ -123,18 +123,18 @@ const Navbar = ({ active, setActive }) => {
   useEffect(() => {
     if (hamburgerClicked === false) {
       if (open === true) {
-        document.body.style.overflow = 'hidden'
+        document.body.style.position = 'fixed'
       } else {
-        document.body.style.overflow = 'auto'
+        document.body.style.position = 'static'
       }
     } else {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = 'fixed'
       bgIcyRef.current.addEventListener('click', () => {
         setHamburgerClicked(false)
         bgIcyRef.current.removeEventListener('click', () => {})
       })
     }
-  }, [hamburgerClicked])
+  }, [hamburgerClicked, open])
 
   useEffect(() => {
     if (itemQuantities.length > 0 && cartData) {
@@ -172,7 +172,10 @@ const Navbar = ({ active, setActive }) => {
               style={{ padding: user?.avatar && '6.5px' }}
             >
               {user?.avatar ? (
-                <img className='img-avatar' src={`${server}/${user?.avatar}`} />
+                <img
+                  className='img-avatar1'
+                  src={`${server}/${user?.avatar}`}
+                />
               ) : (
                 <FaRegUser className='user-icon' />
               )}
@@ -252,7 +255,7 @@ const Navbar = ({ active, setActive }) => {
               <IoMdClose
                 className='cart-x-icon'
                 onClick={() => setOpen(false)}
-              />{' '}
+              />
             </div>
             <div className='cart-items-container-bg'>
               {cartData.length > 0 ? (

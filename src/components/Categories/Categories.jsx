@@ -4,21 +4,21 @@ import { useSelector } from 'react-redux'
 import './Categories.css'
 
 const Categories = () => {
-  const [selectedCategory, setSelectedCategory] = useState('')
   const { isLoading, categorisedProducts } = useSelector(state => state.product)
   const [productData, setProductData] = useState([])
+  const [selectedCategory, setSelectedCategory] = useState('')
 
   useEffect(() => {
     if (categorisedProducts) {
       setProductData(categorisedProducts)
-      console.log(`productData`, productData)
+      setSelectedCategory(productData[0]?._id || '')
     }
-    console.log(`categorisedP`, categorisedProducts)
   }, [categorisedProducts])
 
   useEffect(() => {
-    console.log(`selectedCategory`, selectedCategory)
-  }, [selectedCategory])
+    console.log('TMPZ:', productData)
+    console.log('TMU:', selectedCategory)
+  }, [productData])
 
   return (
     <div className='categories-all-container'>
@@ -67,10 +67,6 @@ const CategorySelectedItems = ({ selectedCategory, productData }) => {
     }
   }, [selectedCategory])
 
-  useEffect(() => {
-    console.log(`bookssData`, booksData)
-  }, [booksData])
-
   return (
     <div>
       <div className='selected-category-container'>
@@ -78,7 +74,9 @@ const CategorySelectedItems = ({ selectedCategory, productData }) => {
         <div className='cat-item-outer-bg-container'>
           <div className='cat-item-inner-bg-container'>
             {booksData.length > 0 ? (
-              booksData[0].books.map(book => <CategoryItem book={book} />)
+              booksData[0].books.map((book, index) => (
+                <CategoryItem key={index} book={book} />
+              ))
             ) : (
               <div>No products yet</div>
             )}

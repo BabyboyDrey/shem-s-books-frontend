@@ -20,8 +20,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* min-width: max-content; */
   width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-body-container {
@@ -166,15 +170,15 @@
   .services-container > h6,
   .socials-container > h6,
   .sitemap-container > h6 {
-    font-size: 27.42px;
+    font-size: 17.42px;
   }
 
   .copyright-container > h6 {
-    font-size: 25.27px;
+    font-size: 18.27px;
   }
 
   .brand-name-container > span {
-    font-size: 64.71px;
+    font-size: 44.71px;
   }
 }
 

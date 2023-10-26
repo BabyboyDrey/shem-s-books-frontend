@@ -204,6 +204,12 @@ div.clicked:hover {
     width: fit-content;
   }
 
+  .main-bg-profile-container {
+    gap: 5px;
+
+    padding: 2px 5px;
+  }
+
   .user-profile-orders-icon,
   .user-profile-settings-icon,
   .user-profile-refunds-icon,
@@ -214,18 +220,24 @@ div.clicked:hover {
   }
 
   .user-profile-icon {
-    height: 26px;
-    width: 26px;
+    height: 22px;
+    width: 22px;
     color: #b90e30;
   }
 
-  .sidebar-headers-container {
-    padding: 20px 10px;
+  .sidebar-content-container {
+    padding: 10px;
   }
 
-  /* .sidebar-content-container.order-cell {
-    width: 500px;
-  } */
+  .sidebar-headers-container {
+    padding: 10px 0;
+    width: 50px;
+  }
+
+  .img-avatar {
+    height: 30px;
+    width: 30px;
+  }
 
   .user-profile-edit-profile-container:hover h5,
   .user-profile-orders-container:hover h5,
@@ -260,7 +272,8 @@ div.clicked:hover {
   line-height: auto;
 }
 
-.flex-align-row input {
+.flex-align-row input,
+.user-profile-input-container .avatar-input {
   background: #fff;
   width: 450px;
   height: 82px;
@@ -382,12 +395,13 @@ div.clicked:hover {
   color: #f8e7ea;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .flex-align-row h3 {
     font-size: 16px;
   }
 
-  .flex-align-row input {
+  .flex-align-row input,
+  .user-profile-input-container .avatar-input {
     width: 250px;
     height: 42px;
     padding: 16px;
@@ -398,6 +412,62 @@ div.clicked:hover {
   .user-profile-input-container option {
     font-size: 14px;
     width: 100px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .user-profile-form {
+    gap: 5px;
+  }
+
+  .user-profile-input-container select,
+  .user-profile-input-container option {
+    font-size: 10px;
+    width: 75px;
+  }
+
+  .flex-align-row {
+    gap: 5px;
+  }
+
+  .flex-align-row h3 {
+    font-size: 10px;
+  }
+
+  .flex-align-row input,
+  .user-profile-input-container .avatar-input {
+    width: 150px;
+    height: 32px;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .user-profile-input-container {
+    gap: 5px;
+  }
+
+  .user-profile-form-button-container button {
+    font-size: 15.04px;
+
+    padding: 2.5px 5px;
+    width: 200px;
+    height: 45px;
+  }
+
+  .user-profile-form-delete-logout-button-container {
+    gap: 5px;
+  }
+
+  .user-profile-form-delete-logout-button-container button:nth-child(1),
+  .user-profile-form-delete-logout-button-container button:nth-child(2) {
+    font-size: 15.04px;
+
+    padding: 3px 5px;
+  }
+
+  .user-profile-container {
+    position: relative;
+    left: -10px;
   }
 }
 

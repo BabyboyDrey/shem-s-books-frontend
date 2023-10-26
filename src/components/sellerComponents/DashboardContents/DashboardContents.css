@@ -7,9 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  /* gap: 20px; */
+
   height: 100%;
-  /* padding-right: 30px; */
 }
 
 /* create product and shop settings css */
@@ -204,6 +203,74 @@ input[type="file"] {
   .dc-user-profile-input-container option {
     font-size: 14px;
     width: 100px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .dc-user-profile-form {
+    gap: 5px;
+  }
+
+  .dc-flex-align-row,
+  .im-dc-flex-align-row {
+    gap: 10px;
+  }
+
+  .dc-flex-align-row h3,
+  .im-dc-flex-align-row h3 {
+    font-size: 10px;
+  }
+
+  .dc-flex-align-row input {
+    width: 150px;
+    height: 32px;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .dc-flex-align-row textarea {
+    padding: 10px;
+
+    font-size: 10px;
+  }
+
+  input[type="file"] {
+    width: 150px;
+    height: 32px;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .dc-user-profile-input-container {
+    gap: 5px;
+  }
+
+  .dc-user-profile-input-container select,
+  .dc-user-profile-input-container option {
+    font-size: 10px;
+
+    width: 150px;
+
+    padding: 5px;
+  }
+
+  .dc-user-profile-form-button-container button {
+    font-size: 16.04px;
+    padding: 2.5px 7px;
+    width: 150px;
+    height: 33px;
+  }
+
+  .dc-user-profile-form-delete-logout-button-container {
+    gap: 5px;
+  }
+
+  .dc-user-profile-form-delete-logout-button-container button:nth-child(2),
+  .dc-user-profile-form-delete-logout-button-container button:nth-child(1) {
+    font-size: 12.04px;
+    padding: 2.5px 7px;
+
+    height: fit-content;
   }
 }
 

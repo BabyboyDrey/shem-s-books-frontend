@@ -203,16 +203,65 @@
   .become-seller-button {
     display: none;
   }
-  .shem {
-    font-size: 28px;
-  }
+  .shem,
   .books {
-    font-size: 28px;
+    font-size: 18px;
   }
 
-  /* .header-container {
-    width: 725px;
-  } */
+  .header-container {
+    width: 100vw;
+    gap: 6px;
+  }
+
+  .sign-up-button {
+    font-size: 10.04px;
+  }
+
+  .become-seller-button {
+    font-size: 10.04px;
+    padding: 2.5px 6.5px;
+    width: fit-content;
+    height: 33px;
+  }
+
+  .button-container {
+    gap: 10px;
+  }
+
+  .search-container {
+    margin: 2.5px;
+    width: 100%;
+  }
+
+  .search-input {
+    padding: 5px;
+    width: 100px;
+    height: 24px;
+
+    padding: 10px 5px 10px 5px;
+    font-size: 11px;
+  }
+
+  .search-input::placeholder {
+    font-size: 11px;
+  }
+
+  .search-vector {
+    width: 15px;
+    height: 15px;
+  }
+
+  .search-vector-container {
+    background-color: #f8e7ea;
+
+    width: 30px;
+
+    height: 24px;
+  }
+
+  .search-result-item-container h3 {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -220,15 +269,14 @@
     display: none;
   }
 
-  .shem {
-    font-size: 28px;
-  }
+  .shem,
   .books {
-    font-size: 28px;
+    font-size: 18px;
   }
-  /* .header-container {
-    width: 725px;
-  } */
+
+  .header-container {
+    width: 100vw;
+  }
 
   .search-input {
     width: 200px;

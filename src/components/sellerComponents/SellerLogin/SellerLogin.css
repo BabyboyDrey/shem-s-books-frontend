@@ -90,3 +90,41 @@
   color: #e6f1f6;
   background-color: #00597e;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .seller-login-container {
+    width: 90vw;
+    min-height: 500px;
+    height: fit-content;
+    padding: 12px;
+  }
+
+  .seller-login-container h1 {
+    font-size: 37.93px;
+  }
+
+  .seller-sign-up-tag-container h5 {
+    font-size: 11.91px;
+    font-weight: 300;
+  }
+
+  .seller-login-form input {
+    width: 250px;
+    height: 42px;
+
+    padding: 28px;
+
+    font-size: 16.5px;
+  }
+
+  .seller-login-form input::placeholder {
+    font-size: 16.5px;
+  }
+
+  .seller-login-form button {
+    width: 180px;
+    height: 45px;
+
+    font-size: 16.5px;
+  }
+}

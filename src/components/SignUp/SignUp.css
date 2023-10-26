@@ -19,7 +19,7 @@
   line-height: auto;
 }
 
-..sign-up-form-container {
+.sign-up-form-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -87,4 +87,47 @@
 .sign-up-form button:hover {
   color: #f8e7ea;
   background-color: #8b0b24;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .sign-up-container {
+    width: 90vw;
+    height: 650px;
+
+    padding: 12px;
+  }
+
+  .sign-up-container h1 {
+    font-size: 37.93px;
+  }
+
+  .login-tag-container h5 {
+    font-size: 11.91px;
+    font-weight: 300;
+  }
+
+  .sign-up-form {
+    width: 80%;
+    height: 80%;
+  }
+
+  .sign-up-form input {
+    width: 250px;
+    height: 42px;
+
+    padding: 28px;
+
+    font-size: 16.5px;
+  }
+
+  .sign-up-form input::placeholder {
+    font-size: 16.5px;
+  }
+
+  .sign-up-form button {
+    width: 180px;
+    height: 45px;
+
+    font-size: 16.5px;
+  }
 }

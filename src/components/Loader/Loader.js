@@ -14,7 +14,7 @@ const Loading = () => {
   return (
     <div className='success-page-bg-container'>
       <br />
-      <Lottie width={300} height={300} options={defaultOptions} />
+      <Lottie width={200} height={300} options={defaultOptions} />
     </div>
   )
 }

@@ -49,3 +49,22 @@
   color: #b90e30;
   background: #f8e7ea;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .user-profile-bg-container {
+    padding: 2px;
+  }
+
+  .white-space-user-profile-bg {
+    padding: 2px;
+  }
+
+  .user-profile-become-seller-button {
+    font-size: 17.04px;
+    font-weight: 700;
+
+    padding: 2px 5px;
+    width: 150px;
+    height: 41px;
+  }
+}

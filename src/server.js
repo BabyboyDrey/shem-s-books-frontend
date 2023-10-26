@@ -1,3 +1,3 @@
-const server = 'http://localhost:8080'
+const server = 'http://localhost:5000'
 
 module.exports = server
