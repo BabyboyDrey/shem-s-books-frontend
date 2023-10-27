@@ -1,3 +1,3 @@
-const server = 'http://localhost:5000'
+const server = 'https://shem-s-books-backend.onrender.com'
 
 module.exports = server
