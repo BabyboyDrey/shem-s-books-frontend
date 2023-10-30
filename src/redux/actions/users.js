@@ -37,8 +37,6 @@ export const loadUser = () => async dispatch => {
         type: 'userLoaded'
       })
     } else if (data.status === 401) {
-      // Check if data is null before dispatching 'noUserCookie'
-
       dispatch({
         type: 'noUserCookie',
         payload: 'unauthorized access'
