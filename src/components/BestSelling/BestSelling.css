@@ -28,7 +28,7 @@
   }
 
   .productcard-container-best-selling {
-    width: content;
+    width: fit-content;
   }
 }
 
