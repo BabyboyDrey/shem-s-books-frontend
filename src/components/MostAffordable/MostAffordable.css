@@ -17,8 +17,8 @@
   flex-wrap: wrap;
   border-radius: 10px;
   padding: 0 10px;
-  min-width: fit-content;
-  width: 100vw;
+  min-width: 100%;
+  width: fit-content;
   background: rgb(254, 240, 240);
 }
 
@@ -32,11 +32,6 @@
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .most-affordable-container {
     padding: 0 20px;
-  }
-
-  .productcard-container-most-affordable {
-    min-width: 100%;
-    width: fit-content;
   }
 }
 @media screen and (min-width: 1024px) {
