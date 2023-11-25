@@ -1,6 +1,7 @@
 .event-card {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   background: #f8e7ea;
   width: 1021px;
@@ -166,51 +167,78 @@
   height: 100%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .event-card {
-    width: 560px;
-    height: 230px;
+    width: 280px;
+    min-height: 180px;
+    height: fit-content;
   }
 
   .product-title {
-    font-size: 23px;
+    font-size: 17px;
   }
 
   .product-desc {
-    font-size: 17px;
+    font-size: 13px;
+  }
+
+  .event-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    width: 50%;
   }
 
   .seller,
   .product-cat {
-    font-size: 17px;
+    font-size: 13px;
   }
 
   .countdown {
-    font-size: 25px;
+    font-size: 13px;
+    min-height: 70%;
+    height: 50px;
   }
 
   .total-price {
-    font-size: 23px;
+    font-size: 15px;
   }
 
   .former-price {
-    font-size: 17.37px;
+    font-size: 15.37px;
   }
 
   .prices-container {
     gap: 5px;
     padding: 10px;
+    margin-top: 10px;
   }
 
   .seller-cat-container {
     gap: 100px;
   }
+
+  .image-conatiner {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .image-conatiner img {
+    height: 100%;
+    min-height: 280px;
+    width: 100%;
+  }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .event-card {
     width: 590px;
-    height: 250px;
+    height: max-content;
   }
 
   .product-title {
